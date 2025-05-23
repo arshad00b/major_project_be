@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.post('/', async (req, res) => {
   try {
+    console.log("The Request hits")
     const order = new Order(req.body);
     const saved = await order.save();
     res.status(201).json(saved);

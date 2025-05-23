@@ -5,8 +5,7 @@ const orderSchema = new mongoose.Schema({
   firmName: { type: String, required: true },
   contact: { type: String, required: true },
   email: { type: String, required: true },
-  location: { type: String, required: true },
-  state: { type: String, required: true },
+  deliveryLocation: { type: String, required: true },
 }, { timestamps: true });
 
 const Order = mongoose.model('Order', orderSchema);
